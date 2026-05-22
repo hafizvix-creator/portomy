@@ -1,0 +1,93 @@
+{
+  "profile": {
+    "name": "Abdul Hafiz Khairi",
+    "role": "Network Engineer & Creative Technician",
+    "bio": "Informatics Engineering student with a robust background in Computer & Network Engineering. Experienced in Kominfo's network infrastructure, system administration, and basic multimedia production.",
+    "socials": {
+      "instagram": "https://www.instagram.com/apisaseli/",
+      "tiktok": "https://www.tiktok.com/@apisssias"
+    }
+  },
+  "education": [
+    {
+      "year": "2025 - Present",
+      "institution": "Sains dan Teknologi Indonesia University",
+      "major": "Bachelor of Informatics Engineering"
+    },
+    {
+      "year": "2022 - 2025",
+      "institution": "Hasanah Pekanbaru Vocational High School",
+      "major": "Computer & Network Engineering (TKJ)"
+    },
+    {
+      "year": "2019 - 2022",
+      "institution": "Al-Husna Islamic Junior High School",
+      "major": "General Secondary Education"
+    },
+    {
+      "year": "2013 - 2019",
+      "institution": "Sakinah Integrated Islamic Elementary School",
+      "major": "Primary Education"
+    }
+  ],
+  "experience": [
+    {
+      "period": "January - May 2024",
+      "role": "Network Engineer Intern",
+      "company": "Ministry of Communication and Informatics (Kominfo)",
+      "description": "Designed and simulated complex network topologies connecting Kominfo's Data Server, the main Kominfo Office, and the Governor's Office using Cisco Packet Tracer, alongside providing localized network hardware maintenance."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Network & Hardware",
+      "category": "Networking",
+      "details": "MikroTik router configuration, MikroTik hotspot gateway management, LAN cabling architecture (Straight/Cross), modem configuration, and advanced Cisco Packet Tracer network simulation."
+    },
+    {
+      "title": "System Administration",
+      "category": "OS Deployment",
+      "details": "OS deployment and automated setups for Windows and Linux (Ubuntu Desktop/Server) environments, combined with software troubleshooting."
+    },
+    {
+      "title": "Multimedia Production",
+      "category": "Video Editing",
+      "details": "Basic video editing, motion graphics design, sequence timing, and clip optimization within the Alight Motion application."
+    }
+  ],
+  "certificates": [
+    {
+      "id": "01",
+      "title": "Python Programming Basics",
+      "issuer": "Huawei ICT Academy",
+      "icon": "🐍",
+      "description": "Completed the Python Programming Basics course covering fundamental programming concepts, data structures, and problem-solving using Python.",
+      "tags": ["Python", "Programming", "ICT"],
+      "badge": "🌐 International",
+      "badgeClass": "badge-international",
+      "image": "assets/img/cert-huawei.jpg"
+    },
+    {
+      "id": "02",
+      "title": "Junior Technical Support — Wired Telecommunication Activities",
+      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
+      "icon": "📡",
+      "description": "Certified as competent in the field of wired telecommunication activities with the qualification of Junior Technical Support, issued by the National Professional Certification Agency of Indonesia.",
+      "tags": ["Telecommunication", "Technical Support", "Networking"],
+      "badge": "🇮🇩 National",
+      "badgeClass": "badge-national",
+      "image": "assets/img/cert-bnsp.jpg"
+    },
+    {
+      "id": "03",
+      "title": "IT Essentials",
+      "issuer": "Cisco Networking Academy",
+      "icon": "🖥️",
+      "description": "Completed the IT Essentials course as part of the Cisco Networking Academy program, covering hardware, software, operating systems, security, and troubleshooting fundamentals.",
+      "tags": ["IT Essentials", "Hardware", "Networking", "Cisco"],
+      "badge": "🌐 International",
+      "badgeClass": "badge-international",
+      "image": "assets/img/cert-cisco.jpg"
+    }
+  ]
+}

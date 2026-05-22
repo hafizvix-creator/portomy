@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Hafiz Khairi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white relative">
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <canvas id="particleCanvas"></canvas>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <div class="page-overlay"></div>
+
+    <div class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <nav class="desktop-nav">
+        <div class="logo target-hover">Hafiz<span style="color: var(--color-pink);">.</span></div>
+        <div class="nav-links">
+            <button data-page="home" class="nav-btn active">Home</button>
+            <button data-page="resume" class="nav-btn">Resume</button>
+            <button data-page="skills" class="nav-btn">Skills</button>
+            <button data-page="certificates" class="nav-btn">Certificates</button>
+        </div>
+    </nav>
+
+    <div class="sidebar-menu" id="sidebarMenu">
+        <div class="sidebar-logo">Portofolio<span style="color: var(--color-pink);">.</span></div>
+        <ul class="sidebar-links">
+            <li><button data-page="home" class="sidebar-btn active"><i class="fas fa-home"></i> Home</button></li>
+            <li><button data-page="resume" class="sidebar-btn"><i class="fas fa-file-alt"></i> Resume</button></li>
+            <li><button data-page="skills" class="sidebar-btn"><i class="fas fa-code"></i> Skills</button></li>
+            <li><button data-page="certificates" class="sidebar-btn"><i class="fas fa-certificate"></i> Certificates</button></li>
+        </ul>
+    </div>
+
+    <main class="content-container">
+        
+        <section id="home" class="page-section active">
+            <div class="hero-content">
+                <h1 id="hero-name" class="animate-fade-in" style="animation-delay: 0.2s;">Loading...</h1>
+                <h2 id="hero-role" class="animate-fade-in" style="animation-delay: 0.4s;"></h2>
+                <p id="hero-bio" class="animate-fade-in text-justify" style="animation-delay: 0.6s;"></p>
+                
+                <div class="ticker-wrapper animate-fade-in" style="animation-delay: 0.65s;">
+                    <div class="ticker-track">
+                        <div class="ticker-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+                        <div class="ticker-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+                        <div class="ticker-item"><i class="fab fa-js"></i> <span>JS</span></div>
+                        <div class="ticker-item"><i class="fab fa-python"></i> <span>Python</span></div>
+                        <div class="ticker-item"><i class="fab fa-java"></i> <span>Java</span></div>
+                        <div class="ticker-item"><i class="fas fa-code"></i> <span>Visual Studio</span></div>
+                        <div class="ticker-item"><i class="fas fa-terminal"></i> <span>Kiro IDE</span></div>
+                        <div class="ticker-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                        <div class="ticker-item"><i class="fab fa-html5"></i> <span>HTML</span></div>
+                        <div class="ticker-item"><i class="fab fa-css3-alt"></i> <span>CSS</span></div>
+                        <div class="ticker-item"><i class="fab fa-js"></i> <span>JS</span></div>
+                        <div class="ticker-item"><i class="fab fa-python"></i> <span>Python</span></div>
+                        <div class="ticker-item"><i class="fab fa-java"></i> <span>Java</span></div>
+                        <div class="ticker-item"><i class="fas fa-code"></i> <span>Visual Studio</span></div>
+                        <div class="ticker-item"><i class="fas fa-terminal"></i> <span>Kiro IDE</span></div>
+                        <div class="ticker-item"><i class="fab fa-php"></i> <span>PHP</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-actions-wrapper animate-fade-in" style="animation-delay: 0.7s;">
+                    <div id="hero-socials" class="social-links-container"></div>
+                    <button data-page="resume" class="cta-btn target-hover">View Resume</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="page-section">
+            <h2 class="section-title">Timeline & Experience</h2>
+            <div class="resume-split">
+                <div class="resume-block">
+                    <h3 class="block-subtitle"><i class="fas fa-graduation-cap mr-2"></i> Education</h3>
+                    <div id="education-list"></div>
+                </div>
+                <div class="resume-block">
+                    <h3 class="block-subtitle"><i class="fas fa-briefcase mr-2"></i> Internships</h3>
+                    <div id="experience-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="page-section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div id="skills-grid" class="skills-grid"></div>
+        </section>
+
+        <section id="certificates" class="page-section">
+            <h2 class="section-title">My Certificates (blom dimasukin foto sertifnya hehe)</h2>
+            <div id="certificates-grid" class="cert-grid"></div>
+        </section>
+
+    </main>
+
+    <div id="cert-modal">
+        <button id="cert-modal-close" class="target-hover">✕</button>
+        <img id="cert-modal-img" src="" alt="Certificate Preview">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
